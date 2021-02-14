@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: red 2px solid;
+}
+
+header h1 {
+  margin: 20px;
+  font-size: 50px;
+  color: brown;
+  text-shadow: 10px 8px 10px #19151b;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translate(-58%);
+}
+
+section {
+  background: #7b5a92;
+  height: 250px;
+  text-align: center;
+  border-bottom: red 2px solid;
+}
+
+section .form {
+  padding-top: 50px;
+}
+
+section input[type="number"] {
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 2rem;
+}
+
+section input[type="submit"] {
+  margin-top: 10px;
+  font-size: 2rem;
+  border: 1px;
+  width: 122px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+section input[type="submit"]:hover {
+  background-color: brown;
+  color: aliceblue;
+}
+
+footer {
+  background-color: burlywood;
+  margin: 0;
+  overflow: hidden;
+  height: 100px;
+  border-bottom: double 10px black;
+}
+
+#delete {
+  background-color: unset;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer p {
+  text-align: center;
+  font-size: 30px;
+  color: #7b5a92;
+  font-weight: bold;
+}

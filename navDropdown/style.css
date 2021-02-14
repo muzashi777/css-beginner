@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin-top: 0;
+}
+
+body {
+  background-image: url("./room.jpg");
+  background-size: cover;
+}
+
+.nav {
+  margin-top: 60px;
+}
+div li {
+  display: inline-block;
+  padding: 10px;
+}
+
+div ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(232, 214, 214, 0.3);
+  height: 100px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 2em;
+}
+
+li:hover {
+  background-color: rgba(232, 214, 214, 0.3);
+  border-radius: 50px;
+}
+
+.drop {
+  display: none;
+}
+
+.nav li:hover .drop {
+  display: block;
+  position: absolute;
+}
+.nav li:hover .drop ul {
+  display: block;
+}
+.nav li:hover .drop li {
+  border-bottom: 2px double rgb(221, 121, 179);
+  border-radius: 0;
+  background-color: unset;
+  text-align: left;
+  width: 90px;
+}
+.drop li a:hover {
+  color: tomato;
+}
+.nav li:hover .drop li:last-child {
+  border-bottom: none;
+}
+
+.drop li {
+  display: block;
+}
+.drop ul {
+  background-color: transparent;
+}
+
+/* section */

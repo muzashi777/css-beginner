@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin-top: 0;
+}
+
+body {
+  background: url("./ocean-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 5%;
+}
+
+ul .active {
+  background-color: aliceblue;
+  color: #3693be;
+}
+
+.logo-image {
+  width: 120px;
+  height: 100%;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+header ul li {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2em;
+  padding-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 3px;
+  padding-right: 5px;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: rgba(249, 246, 244, 0.6);
+  color: #3693be;
+  transition: all 0.5s ease 0s;
+}
+
+/* section */
+
+section {
+  text-transform: uppercase;
+  color: aliceblue;
+  font-size: 3em;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.h1,
+h1,
+button,
+.btn-all {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-explore,
+.btn-watch {
+  background: transparent;
+  font-size: 0.6em;
+  color: aliceblue;
+  padding: 10px;
+  border: 1px solid aliceblue;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.btn-explore:hover,
+.btn-watch:hover {
+  background-color: seashell;
+  color: gray;
+}
+
+/* sub-nav */
+.sub-nav {
+  display: none;
+  margin-top: 0;
+  margin-left: 55px;
+}
+
+/* .sub-nav ul {
+  display: inline;
+} */
+
+.sub-nav li {
+  font-size: 20px;
+  display: block;
+  margin-top: 13px;
+}
+
+.navbar li:hover .sub-nav {
+  display: block;
+  position: absolute;
+}
+
+.navbar li:hover .sub-nav a {
+  color: aliceblue;
+  background-color: unset;
+  text-align: left;
+}
+
+.navbar li:hover .sub-nav li a:hover {
+  color: blue;
+  border-bottom: 1px solid aliceblue;
+}

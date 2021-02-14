@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* top */
+.topic {
+  margin: 0;
+}
+.topic::after {
+  background: url(./image/worker-room.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  content: "";
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.nav h1 {
+  font-size: 3rem;
+  color: #f32db1dc;
+}
+.nav p {
+  font-size: 25px;
+  color: #f32db1dc;
+}
+
+.nav button {
+  border: #f32db1dc solid 1px;
+  background-color: unset;
+  padding: 10px;
+  color: #f32db1dc;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s ease 0s;
+}
+
+.nav button:hover {
+  background-color: rgba(red, green, blue, 1);
+}
+
+/* content */
+
+.content-one {
+  background-color: #89c8d8;
+  padding: 2rem 1rem;
+  font-size: 20px;
+}
+
+.content-two {
+  background-color: #f4f4f4;
+  padding: 2rem 1rem;
+  font-size: 20px;
+}
+
+.content-three {
+  display: grid;
+  /* grid-gap: 20px; */
+
+  font-size: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.two {
+  padding: 2rem 1rem;
+}
+
+.skyblue {
+  background-color: #89c8d8;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .content-three {
+    display: block;
+  }
+}

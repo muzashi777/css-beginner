@@ -1,0 +1,57 @@
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.album {
+  background: rgba(255, 255, 255, 0.2);
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  padding: 20px;
+  grid-gap: 10px;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.album-artwork {
+  width: 100%;
+}
+h2,
+h3 {
+  margin: 0;
+}
+body {
+  background-image: url("../homeOcean/ocean-2.jpg"),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+  background-size: cover;
+  margin: 50px;
+  background-attachment: fixed;
+  letter-spacing: -1px;
+  min-height: calc(100vh - 100px);
+  background-position: center;
+}
+
+h1::before {
+  content: "Hi there(";
+  color: #f93d66;
+}
+
+h1::after {
+  content: ")";
+  color: skyblue;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 10px 10px 15px;
+}
+
+html {
+  box-sizing: border-box;
+}
